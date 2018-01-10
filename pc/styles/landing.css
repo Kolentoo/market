@@ -325,7 +325,7 @@ margin:0 13px;cursor: pointer;height: 78px;line-height: 78px;transition:all ease
 .phone-nav {position: fixed;top: 60%;right: 40px;text-align: center;z-index:800;
 width: 176px;height: 96px;text-align: center;font-size: 16px;line-height: 18px;}
 .phone-nav .phone-con {position: relative;}
-.phone-nav .phone-con .p2 {height: 96px;line-height: 96px;background: #fff;width: 137px;text-align: center;font-size: 20px;position: absolute;
+.phone-nav .phone-con .p2 {height: 96px;line-height: 96px;background: #fff;width: 142px;text-align: center;font-size: 20px;position: absolute;
 right: 0;top: 0;padding:0 15px;border-radius:8px 0 0 8px;color:#ff8c1b;z-index:-1;border:1px solid #e6e6e6;
 transition:all ease 0.5s;opacity: 0;filter:alpha(opacity=0);}
 .phone-nav .phone-con .p-on {opacity: 1;filter:alpha(opacity=100);}
