@@ -1,0 +1,120 @@
+body{opacity: 0;}
+.body-on {opacity: 1;}
+body, html{background: #fff;overflow-x: hidden;width: 100%;}
+select {-webkit-appearance: none;-moz-appearance: none;}
+input {-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;}
+input:-ms-input-placeholder{color:#ccc;}
+input::-webkit-input-placeholder{color:#ccc;}
+.pf {font-family: PingFangTC-Light, sans-serif;}
+.sy {font-family: 'Source Han Sans CN';}
+.border {box-shadow:0 1.2rem 5rem rgba(0,0,0,0.1);-webkit-box-shadow:0 1.2rem 5rem rgba(0,0,0,0.1);-moz-box-shadow:0 1.2rem 5rem rgba(0,0,0,0.1);}
+.common-mask {width: 100%;height: 100%;position: fixed;background: #000;z-index:-1;transition:all ease 0.5s;top: 0;left: 0;
+opacity: 0;filter: alpha(opacity=0);}
+.mask-on {z-index:900;opacity: 0.5;filter: alpha(opacity=50);}
+
+
+.banner {background: url(../images/market.jpg) top center no-repeat;background-size: auto auto;-webkit-background-size: 100%;
+-moz-background-size: 100%;height: 53.6rem;color:#fff;}
+.banner h2{font-size: 4.8rem;padding:19.4rem 0 0 3.8rem;}
+.banner .p1 {font-size: 3.6rem;margin:0.6rem 0 0 3.8rem;}
+.art-pop {width: 69rem;margin:-4.5rem auto 0;background: #fff;padding:8rem 0 4.5rem 0;border-radius:1.2rem;}
+.art-pop .listen-con {position: relative;top: -3rem;;}
+.art-pop .child-pic {position: absolute;left: -1.9rem;bottom: -1.6rem;width: 41.1rem;height: 25.3rem;}
+.art-pop .table {background: #fff;border-radius:0 .8rem .8rem 0;width: 100%;}
+.art-pop .table h2{font-size: 4rem;color:#333;padding-bottom: 1.5rem;}
+.art-pop .listen-group {margin:2.2rem 4rem 0;;}
+.art-pop .infor-item {width: 100%;margin:.4rem 0 1.7rem 0;position: relative;}
+.art-pop .infor-item input{color:#333;border:.1rem solid #e6e6e6;border-radius:1.2rem;font-size:2.6rem;
+width: 58rem;padding:2.9rem 0 2.9rem 3rem;;}
+.art-pop .infor-item .city-box {position: relative;width: 47.7%;}
+.art-pop .infor-item .city-box .down-icon {position: absolute;width: 2.4rem;right: 2rem;top: 50%;margin-top: -0.8rem;}
+.art-pop .infor-item select{width: 100%;border:.1rem solid #e6e6e6;border-radius:1.2rem;font-size:2.6rem;
+padding:3rem 0 3rem 3rem;}
+.art-pop .infor-item option{font-size: 2.6rem;}
+.art-pop .infor-item .code {width: 36.5rem;}
+.art-pop .infor-item .code-btn {width: 18rem;height: 8.8rem;line-height: 9rem;}
+.art-pop .infor-item .code-btn p{color:#fff;font-size: 2.6rem;border-radius:1.2rem;text-align: center;}
+.art-pop .infor-item .code-btn .p1 {background: #ff8c1b;border:0.1rem solid #ff8c1b;}
+.art-pop .infor-item .code-btn .p2 {background: #ddd;border:0.1rem solid #ddd;}
+.art-pop .refer {background: #ddd;width: 100%;margin:.5rem auto 0;border-radius:1.2rem;line-height: 9rem;color:#fff;font-size: 3rem;
+text-align: center;cursor: pointer;}
+.art-pop .refer-on {background: #ff8c1b;}
+
+.lesson-box {margin-top: 8rem;}
+.lesson-box h2{font-size: 4.2rem;line-height: 4.2rem;}
+.lesson-box .shape {width: 3.8rem;height: 0.4rem;background: #ff8c1b;border-radius:1.5rem;margin:1.5rem auto 0;}
+.lesson-box .lesson-con {width: 69rem;margin:0 auto;}
+.lesson-box .lesson-list {border-radius:1.2rem;background: #fff;margin-top: 6rem;overflow: hidden;padding-bottom: 4rem;}
+.lesson-box .lesson-list img{width: 69rem;}
+.lesson-box .lesson-list h3{font-size: 3.2rem;margin-top: 2.5rem;}
+.lesson-box .lesson-list .desc {font-size: 2.8rem;color:#666;width: 57rem;margin:2.5rem auto 0;}
+.lesson-box .lesson-list .listen-btn {width: 57rem;margin:2.5rem auto 0;border-radius:1.2rem;color:#fff;background: #ff8c1b;font-size: 2.8rem;
+text-align: center;height: 7.6rem;line-height: 7.6rem;}
+
+.enviroment {background: url(../images/market7.jpg) top center no-repeat;background-size: auto auto;-webkit-background-size: 100%;
+-moz-background-size: 100%;height: 65rem;margin-top: 8rem;position: relative;}
+.enviroment h2{font-size: 4.2rem;line-height: 4.2rem;padding-top: 6rem;}
+.enviroment .shape {width: 3.8rem;height: 0.4rem;background: #ff8c1b;border-radius:1.5rem;margin:1.5rem auto 0;}
+.swiper-container { width: 100%;height: 37rem;margin: 2rem auto;}
+.enviroment .swiper-container {width: 55rem;margin:5rem auto 0;}
+.enviroment .swiper-slide {font-size: 2.8rem;display: -webkit-box;
+display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;
+-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;
+-webkit-align-items: center;align-items: center;}
+.enviroment .swiper-slide .chart {width: 55rem;}
+.enviroment .swiper-slide .chart .title {font-size: 2.8rem;color:#666;margin-top: 1.5rem;opacity:0;}
+.enviroment .swiper-slide-active .chart .title {font-size: 2.8rem;color:#666;margin-top: 1.5rem;opacity:1;}
+.enviroment .swiper-button-prev {background: url(../images/arrow1.png) no-repeat;width: 4.7rem;height: 7.5rem;
+position: absolute;top: 33rem;left: 2rem;z-index:500;}
+.enviroment .swiper-button-next {background: url(../images/arrow2.png) no-repeat;width: 4.7rem;height: 7.5rem;
+position: absolute;top: 33rem;right:2rem;z-index:500;}
+.enviroment .swiper-pagination {font-size: 2.6rem;color:#666;width: 120px;position: absolute;top: 50rem;left: 50%;margin-left: 19rem;}
+
+.intro {background: #fff;padding:8rem 0;}
+.intro h2{font-size: 4.2rem;line-height: 4.2rem;padding-top: 6rem;}
+.intro .shape {width: 3.8rem;height: 0.4rem;background: #ff8c1b;border-radius:1.5rem;margin:1.5rem auto 0;}
+.intro .intro-con {background: #f5f5fa;padding:1rem 2.5rem 6rem;margin:0 3rem;border-radius:1.2rem;}
+.intro .intro-con .intro-pic {width: 100%;margin-top: 5rem;}
+.intro .intro-con .desc {font-size: 2.8rem;color:#666;margin-top: 1.8rem;}
+.bottom {background: url(../images/market6.jpg) top center no-repeat;background-size: auto auto;-webkit-background-size: 100%;
+-moz-background-size: 100%;height: 30.6rem;}
+.bottom .text {font-size: 4.2rem;color:#fff;padding:6rem 0 3rem 0;}
+.bottom .listen-btn {color:#ff8c1b;border-radius:3.5rem;background: #fff;width: 25rem;margin:0 auto;height: 7rem;line-height: 7rem;
+font-size: 2.8rem;}
+
+.nav {position: fixed;bottom: 15%;right: 2rem;z-index:-1;opacity: 0;transition:all ease 0.5s;}
+.nav-on {z-index:300;opacity: 1;}
+.nav img{margin-bottom: 1rem;width: 10.4rem;}
+
+.apply-pop {position: fixed;left: 50%;top: 50%;width: 56.6rem;margin:-30rem 0 0 -28.3rem;z-index:999;}
+.sign-body,.signHtml {background: #f9f9fa;height: 100%;}
+.sign-box .sign-info {background: #fff;border:0.1rem solid #e6e6e6;border-radius:1rem;
+box-shadow: 0.6rem 0 2rem rgba(0,0,0,0.06);padding:8rem 0;text-align: center;}
+.sign-box .sign-info .p4 {font-size: 2.4rem;}
+.sign-box .sign-bj {background: url(../images/success-bj.png) top center no-repeat;background-size: auto auto;-webkit-background-size: 100%;
+-moz-background-size: 100%;height: 92.8rem;width: 70.1rem;border:none;box-shadow:none;}
+.sign-box .sign-info .success-icon {width: 12.4rem;margin:0 auto;display: block;}
+.sign-box .sign-info h2{font-size: 3.6rem;color:#333;margin: 2.4rem 0 1rem 0;}
+.sign-box .sign-info .p1 {color:#999;font-size: 2.4rem;}
+.sign-box .sign-info .p1 a{color:#0097f1;}
+.sign-success .sign-info .sign-btn {width: 27rem;margin:5rem auto 0;}
+.sign-success .sign-info .sign-btn a{width: 100%;height: 7.8rem;line-height: 7.8rem;text-align: center;border:0.1rem solid #e6e6e6;
+background: #ff8c1b;border-radius:0.8rem;color:#fff;font-size: 2.7rem;display: inline-block;}
+.sign-success .sign-section2 {margin: 2.7rem 8rem 0;text-align: left;}
+.sign-success .section-title {font-size: 2.4rem;color:#999;}
+.sign-success .sign-detail {margin:0 5rem;}
+.sign-success .sign-list {margin-top: 3.3rem;}
+.sign-success .sign-list span {display: inline-block;}
+.sign-success .sign-list .s1 {font-size: 2.8rem;color:#999;width: 22rem;}
+.sign-success .sign-list .s2 {font-size: 2.8rem;color:#333;}
+.sign-failed .sign-info .sign-btn {width: 21rem;margin:5rem auto 0;}
+.sign-failed .sign-info .sign-btn a{width: 100%;height: 7.8rem;line-height: 7.8rem;text-align: center;
+background: #ff8c1b;border-radius:0.8rem;color:#fff;font-size: 2.7rem;display: inline-block;}
+.apply-pop {position: fixed;left: 50%;top: 50%;width: 56.6rem;margin:-30rem 0 0 -28.3rem;z-index:999;}
+
+
+.hint {opacity: 0;font-size: 2rem;color: #ed3939;}
+.art-pop .infor-wrong .hint {opacity: 1;}
+.art-pop .infor-wrong input{border-color:#ed3939;}
+
+
