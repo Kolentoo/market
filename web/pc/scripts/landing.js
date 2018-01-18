@@ -635,6 +635,13 @@ function artApi(){
             var uphone = $('.uphone');
             var uphoneVal = uphone.val();
             var ucode = $('.ucode');
+            var curl = window.location.href;
+            if(curl.indexOf('=')>-1){
+                var sGroup = curl.split('=');
+                var cVal = sGroup[1];
+            }else{
+                var cVal = "";
+            }
 
             if($('.refer').hasClass('refer-on')){
                 if(ucode.val()){
@@ -659,7 +666,7 @@ function artApi(){
                                         type:'GET',
                                         cache:'false',
                                         url:panda+'LandApplyListen?SESSION_ID='+sid,
-                                        data:{'phone':uphoneVal ,'name':uname,'code':ucode.val(),'area':city3},
+                                        data:{'phone':uphoneVal ,'name':uname,'code':ucode.val(),'area':city3,'tgid':cVal},
                                         dataType:'json',
                                         success:function(message){
                                             if(message.status===0){
@@ -691,6 +698,10 @@ function artApi(){
                     return false;
                 }
             }
+        });
+
+        $('.ucode').on('input propertychange',function(){
+            $('.ucode').parents('.infor-item').removeClass('infor-wrong');
         });
     }
 }

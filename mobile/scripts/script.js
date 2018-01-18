@@ -4,6 +4,7 @@ $(function(){
     listenTest();
     codeTime();
     artApi();
+    closePop();
     setTimeout(function() {
         $('body').addClass('body-on');
     }, 100);
@@ -168,6 +169,7 @@ function phoneCheck(a){
     }
 }
 
+// 申请试听
 function artApi(){
     if($('.market-index').get(0)){
         var cbtn = $('.code-btn');
@@ -188,7 +190,6 @@ function artApi(){
                     data:{'phone':uphoneVal},
                     dataType:'json',
                     success:function(data){
-                        console.log(data)
                         var SESSION_ID = data.SESSION_ID;
                         $('.session').text(SESSION_ID);
                         btn1.addClass('hide');
@@ -219,6 +220,14 @@ function artApi(){
             var uphone = $('.phone');
             var uphoneVal = uphone.val();
             var ucode = $('.code');
+            var curl = window.location.href;
+            if(curl.indexOf('=')>-1){
+                var sGroup = curl.split('=');
+                var cVal = sGroup[1];
+            }else{
+                var cVal = "";
+            }
+
 
             if($('.refer').hasClass('refer-on')){
                 if(ucode.val()){
@@ -243,7 +252,7 @@ function artApi(){
                                         type:'GET',
                                         cache:'false',
                                         url:panda+'LandApplyListen?SESSION_ID='+sid,
-                                        data:{'phone':uphoneVal ,'name':uname,'code':ucode.val(),'area':city3},
+                                        data:{'phone':uphoneVal ,'name':uname,'code':ucode.val(),'area':city3,'tgid':cVal},
                                         dataType:'json',
                                         success:function(message){
                                             if(message.status===0){
@@ -276,7 +285,19 @@ function artApi(){
                 }
             }
         });
+
+        $('.code').on('input propertychange',function(){
+            $('.code').parents('.infor-item').removeClass('infor-wrong');
+        });
     }
+}
+
+function closePop(){
+    $('.sign-btn').on('click',function(){
+        $('.sign-success').addClass('hide');
+        $('.sign-failed').addClass('hide');
+        maskoff();
+    });
 }
 
 
