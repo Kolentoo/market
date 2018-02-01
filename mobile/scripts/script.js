@@ -1,5 +1,4 @@
 $(function(){
-
     _IsIOS();
     listenTest();
     codeTime();
@@ -248,10 +247,12 @@ function artApi(){
                                         city2="";
                                     }
                                     var city3 = city1+city2;
+                                    var curl = window.location.href;
+                                    var pramas = window.location.search.slice(1);
                                     $.ajax({
                                         type:'GET',
                                         cache:'false',
-                                        url:panda+'LandApplyListen?SESSION_ID='+sid,
+                                        url:panda+'LandApplyListen?SESSION_ID='+sid+'&'+pramas,
                                         data:{'phone':uphoneVal ,'name':uname,'code':ucode.val(),'area':city3,'tgid':cVal},
                                         dataType:'json',
                                         success:function(message){
