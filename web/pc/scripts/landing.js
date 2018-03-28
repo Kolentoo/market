@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 
     // 延迟加载
     if($('.pic-lazy').get(0)){
