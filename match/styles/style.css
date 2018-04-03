@@ -21,6 +21,7 @@ background: blue;opacity: 0;filter:alpha(opacity=0);}
 .company .ctitle h3{font-size: 26px;color:#fd7555;margin-bottom: 25px;}
 .company .ctitle .p1 {font-size: 16px;color:#333;}
 .company .c-list {width: 420px;height: 90px;overflow: hidden;margin-top: 30px;}
+.company .c-single {width: 100%;}
 .company .c-list img{width: 90px;}
 .company .c-list .info {margin-left: 105px;}
 .company .c-list .info .name {font-size: 18px;color:#333;}
